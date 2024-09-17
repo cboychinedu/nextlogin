@@ -1,0 +1,62 @@
+.mainDiv {
+    display: grid;
+    justify-content: center;
+    margin-top: 40px;
+    align-items: center;
+    width: 100%; 
+}
+.containerDiv {
+    display: grid;
+    margin-top: 100px;
+    height: fit-content;
+    justify-content: center;
+    border: 1px solid #cecece;
+    padding: 30px;
+    border-radius: 5px; 
+    background: white;
+}
+.headerTextDiv {
+    text-align: center;
+}
+.enterYouFullnameDiv {
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.inputFormDiv {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+.inputForm {
+    height: 3em;
+    padding-left: 10px;
+    border-radius: 5px;
+    border: 1px solid #999999;
+
+}
+.registerBtn {
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    background: blue;
+    color: white;
+    font-weight: bold;
+}
+.loginBtn {
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #c2c2c2;
+    background: transparent;
+    color: black;
+    font-weight: bold;
+}
+.registerBtnDiv {
+    margin-bottom: 6px;
+}
+.connectWithAFriendText {
+    font-size: 12px;
+}
