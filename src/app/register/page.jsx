@@ -45,7 +45,9 @@ const Register = (props) => {
                 </div>
 
                 <div className={styles.inputFormDiv}> 
-                    <button className={styles.loginBtn}> Login </button>
+                    <button className={styles.loginBtn} onClick={() => {
+                        window.location.href = "/login"
+                    }}> Login </button>
                 </div>
 
 
