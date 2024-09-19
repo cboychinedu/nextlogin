@@ -58,7 +58,7 @@ const Login = () => {
                 // redirect the user to the dashboard page 
                 window.location.href = "/dashboard"; 
 
-              }, 2000)
+              }, 1000)
           } 
       })
 
