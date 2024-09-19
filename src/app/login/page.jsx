@@ -48,7 +48,18 @@ const Login = () => {
       // making a post request to the servevr ip address 
       axios.post(serverIpAddress, loginData, config) 
       .then((responseData) => {
-        console.dir(responseData); 
+          // If the response data was a success 
+          if (responseData.data.status === "success") {
+              // Delay the login duration or 3 seconds 
+              setTimeout(() => {
+                // Saving the auth token into the local storage memory
+                localStorage.setItem("x-auth-token", responseData.data["x-auth-token"])
+
+                // redirect the user to the dashboard page 
+                window.location.href = "/dashboard"; 
+
+              }, 2000)
+          } 
       })
 
     }

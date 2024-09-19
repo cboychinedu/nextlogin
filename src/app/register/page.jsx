@@ -53,7 +53,23 @@ const Register = (props) => {
             // Making a post request to the server ip address 
             axios.post(serverIpAddress, userData, config)
             .then((responseData) => {
-                console.dir(responseData); 
+                // if the response data was successful  
+                if (responseData.data.status === "success") {
+                    // Redirecting the user to the login page 
+                    setTimeout(() => {
+                        window.location.href = "/login"
+                    }, 4000); 
+                }
+
+                // if there was an error in registration 
+                else if (responseData.data.status === "user-registered-error") {
+                    alert("User already registered on the database"); 
+                }
+
+                // if normal error occured 
+                else if (responseData.data.status === "error") {
+                    alert(responseData.data.message); 
+                }
             })
         }
 
