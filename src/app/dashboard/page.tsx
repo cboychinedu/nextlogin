@@ -6,6 +6,7 @@ import styles from './dashboard.module.css';
 import Navbar from '../components/dashboardNavbar';
 import { useRouter } from 'next/navigation';
 
+// Creating the dashboard component 
 const Dashboard = () => {
   const router = useRouter();
   const [isComponentRendered, setIsComponentRendered] = useState(false);
@@ -18,7 +19,9 @@ const Dashboard = () => {
       // Check if the token is present
       if (!token) {
         router.push('/login');
-      } else {
+      } 
+      
+      else {
         setIsComponentRendered(true);
       }
     }, 10); 
@@ -26,6 +29,7 @@ const Dashboard = () => {
     return () => clearTimeout(timeoutId);
   }, []);
 
+  // Rendering the component 
   return (
     <div>
       {isComponentRendered && (
@@ -41,4 +45,5 @@ const Dashboard = () => {
   );
 };
 
+// Exporting the dashboard component 
 export default Dashboard;
