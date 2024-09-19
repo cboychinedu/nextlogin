@@ -21,11 +21,11 @@ const Register = (props) => {
         }
 
         else if (emailAddress.value === "") {
-            alert("Email address required"); 
+            alert("Email address is required"); 
         }
 
         else if (password.value === "") {
-            alert("Password required"); 
+            alert("Password is required"); 
         }
 
         else {
