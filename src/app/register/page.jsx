@@ -106,14 +106,10 @@ const Register = (props) => {
                         window.location.href = "/login"
                     }}> Login </button>
                 </div>
-
-
-
             </main>
         </div>
     )
 }
-
 
 // Exporting the register component 
 export default Register 
